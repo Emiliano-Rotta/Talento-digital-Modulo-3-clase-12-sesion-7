@@ -123,3 +123,11 @@
 
 // Ejercicio 4
 // Consigna: Crea una función que reciba un objeto producto y use el operador de fusión nula y el operador de encadenamiento opcional para devolver el precio con impuestos, usando un valor predeterminado si precio es null o undefined. (No hacerlo con destructuracion)
+
+
+// Ejercicio 5
+// Consigna: Dado un objeto config, usa el operador lógico de asignación y el operador de encadenamiento opcional para asegurar que config.url y config.timeout tengan valores predeterminados.
+
+
+// Ejercicio 6
+// Consigna: Crea un objeto persona con un método saludar. Usa el operador de encadenamiento opcional para llamar al método saludar, y si no existe, retorna un mensaje predeterminado.
