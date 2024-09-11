@@ -109,20 +109,56 @@
 // Ejercicio 1
 // Consigna: Crea un objeto persona con propiedades nombre, edad, y ciudad. Usa el operador de fusión nula para asignar un valor predeterminado a ciudad si es null o undefined.
 
+// const persona = {
+//     nombre:"Emiliano",
+//     edad: 31,
+//     ciudad: null
+// };
 
+// ciudad = persona.ciudad ?? "Desconocida"
+// console.log(ciudad)
+// console.log(persona.ciudad)
 
 // Ejercicio 2
 // Consigna: Dado un objeto configuración, usa el operador lógico de asignación para asignar valores predeterminados a las propiedades tema e idioma si no están definidos.
 
+// const configuracion = {
+//     tema: null,
+//     idioma: "Español"
+// }
+
+// configuracion.tema ||= "oscuro"
+// configuracion.idioma ||= "Ingles"
+// console.log(configuracion)
 
 
 // Ejercicio 3
 // Consigna: Usa el operador de encadenamiento opcional para acceder a la propiedad direccion de un objeto usuario, y asigna un valor predeterminado en caso de que no exista.
 
+// const usuario = {
+//     nombre: "Emiliano",
+//     direccion: null
+// }
+
+// const ciudad = usuario.direccion?.ciudad ?? "No especificado"
+// console.log(ciudad)
 
 
 // Ejercicio 4
 // Consigna: Crea una función que reciba un objeto producto y use el operador de fusión nula y el operador de encadenamiento opcional para devolver el precio con impuestos, usando un valor predeterminado si precio es null o undefined. (No hacerlo con destructuracion)
+
+
+// const calcularPrecioConImpuesto = (producto) => {
+//     const precio = producto?.precio ?? 0;
+//     const impuestos = producto?.impuestos ?? 0.1;
+
+//     return precio + precio*impuestos
+// } 
+// // const producto = null
+
+// const producto = {precio:100}
+
+// console.log(calcularPrecioConImpuesto(producto))
 
 
 // Ejercicio 5
