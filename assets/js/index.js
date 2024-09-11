@@ -206,10 +206,10 @@
 // Ejercicio 8
 // Consigna: Crea una función que reciba un objeto cliente y use el operador de encadenamiento opcional para obtener el nombre de su empresa. Si no existe, usa el operador de fusión nula para devolver "Sin empresa".
 
-const nombreDeLaEmpresa = (cliente) =>{
-    return cliente.empresa?.nombre ?? "Sin empresa"
-}
+// const nombreDeLaEmpresa = (cliente) =>{
+//     return cliente.empresa?.nombre ?? "Sin empresa"
+// }
 
-const cliente = {nombre: "Emiliano", empresa:null}
+// const cliente = {nombre: "Emiliano", empresa:null}
 
-console.log(nombreDeLaEmpresa(cliente))
+// console.log(nombreDeLaEmpresa(cliente))
