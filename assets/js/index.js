@@ -160,10 +160,56 @@
 
 // console.log(calcularPrecioConImpuesto(producto))
 
-
+//-------------------------------------------------------
 // Ejercicio 5
 // Consigna: Dado un objeto config, usa el operador lógico de asignación y el operador de encadenamiento opcional para asegurar que config.url y config.timeout tengan valores predeterminados.
 
+// const config = {
+//     url: null,
+//     timeout: undefined
+// }
+
+// config.url ||= "www.edutecno.com";
+// config.timeout ||= 10000;
+
+// console.log(config)
+
+//-------------------------------------------------------
 
 // Ejercicio 6
 // Consigna: Crea un objeto persona con un método saludar. Usa el operador de encadenamiento opcional para llamar al método saludar, y si no existe, retorna un mensaje predeterminado.
+
+// const persona = {
+//     nombre: "Rodrigo",
+//     saludar: null
+// }
+
+// const mensaje = persona.saludar?.() ?? "No hay saludo disponible"
+// console.log(mensaje)
+
+//-------------------------------------------------------
+// Ejercicio 7
+// Consigna: Usa el operador de fusión nula para establecer un valor predeterminado para una propiedad descuento en un objeto producto, y luego usa el operador lógico de asignación para garantizar que no se sobreescriba si ya existe un valor.
+
+// const producto = {
+//     nombre:"remera",
+//     descuento:null
+// }
+
+// producto.descuento = producto.descuento ?? 0.1
+// // producto.descuento ||= 0.15
+
+// console.log(producto.descuento)
+
+
+//-------------------------------------------------------
+// Ejercicio 8
+// Consigna: Crea una función que reciba un objeto cliente y use el operador de encadenamiento opcional para obtener el nombre de su empresa. Si no existe, usa el operador de fusión nula para devolver "Sin empresa".
+
+const nombreDeLaEmpresa = (cliente) =>{
+    return cliente.empresa?.nombre ?? "Sin empresa"
+}
+
+const cliente = {nombre: "Emiliano", empresa:null}
+
+console.log(nombreDeLaEmpresa(cliente))
